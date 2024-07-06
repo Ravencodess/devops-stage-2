@@ -18,7 +18,7 @@ services:
       context: ./frontend
     container_name: nodejs_app
     ports:
-      - "80:5173"
+      - "5173:5173"
     environment:
       VITE_API_URL: http://raven.cloudranger.net
 
@@ -49,6 +49,17 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+
+  nginx:
+    build:
+      context: .
+    container_name: nginx_proxy
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - adminer
+      - nginx-proxy-manager
 
 volumes:
   postgres_data:
