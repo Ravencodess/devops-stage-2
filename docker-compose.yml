@@ -57,6 +57,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./proxy_params.conf:/etc/nginx/proxy_params.conf
     depends_on:
       - frontend
       - adminer
