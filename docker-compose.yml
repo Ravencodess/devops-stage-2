@@ -40,7 +40,7 @@ services:
     ports:
       - "8080:8080"
 
-  nginx-proxy-manager:
+  proxy:
     image: jc21/nginx-proxy-manager:latest
     container_name: nginx_proxy_manager
     ports:
