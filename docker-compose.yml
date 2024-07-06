@@ -18,9 +18,9 @@ services:
       context: ./frontend
     container_name: nodejs_app
     ports:
-      - "5173:5173"
+      - "80:5173"
     environment:
-      VITE_API_URL: http://test.cloudranger.net
+      VITE_API_URL: http://raven.cloudranger.net
 
   db:
     image: postgres:latest
