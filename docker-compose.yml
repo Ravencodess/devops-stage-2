@@ -60,7 +60,7 @@ services:
     depends_on:
       - frontend
       - adminer
-      - nginx-proxy-manager
+      - proxy
 
 volumes:
   postgres_data:
