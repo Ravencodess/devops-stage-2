@@ -6,24 +6,48 @@ This directory contains the frontend of the application built with ReactJS and C
 
 - Node.js (version 14.x or higher)
 - npm (version 6.x or higher)
+- Docker
 
 ## Setup Instructions
 
-1. **Navigate to the frontend directory**:
-    ```sh
-    cd frontend
-    ```
+### Running the Application Locally
 
-2. **Install dependencies**:
-    ```sh
-    npm install
-    ```
+1. **Navigate to the frontend directory:**
 
-3. **Run the development server**:
-    ```sh
-    npm run dev
-    ```
+   ```bash
+   cd frontend
+   ```
 
-4. **Configure API URL**:
-   Ensure the API URL is correctly set in the `.env` file.
+2. **Install dependencies:**
 
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev -- --host
+   ```
+
+4. **Accessing the application using curl:**
+
+   ```bash
+   curl localhost:5173
+   ```
+
+5. **Accessing the UI:**
+
+   Open your browser and navigate to:
+
+   ```bash
+   http://<your_domain_name>:5173
+   ```
+
+6. **Enable login access from the UI:**
+
+   Change the `VITE_API_URL` variable in the `.env` file to point to your domain name instead of localhost:
+
+   ```env
+   VITE_API_URL=http://<your_domain_name>
+   ```
