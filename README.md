@@ -50,12 +50,11 @@ This repository contains a full-stack application setup using Docker Compose. Th
    ```
 
 3. **Verify the services are running**:
-   - **FastAPI Backend**: [http://localhost:8000](http://localhost:8000)
-   - **Node.js Frontend**: [http://localhost:5173](http://localhost:5173)
+   - **FastAPI Backend**: [http://localhost/api](http://localhost/api)
+   - **Node.js Frontend**: [http://localhost](http://localhost)
    - **PostgreSQL Database**: Accessible on port `5432` (no direct browser access)
-   - **Adminer**: [http://localhost:8080](http://localhost:8080)
-   - **Nginx Proxy Manager**: [http://localhost:8090](http://localhost:8090)
-   - **Nginx**: [http://localhost](http://localhost)
+   - **Adminer**: [http://localhost:8080](http://localhost:8080) or [http://db.localhost](http://db.localhost)
+   - **Nginx Proxy Manager**: [http://localhost:8090](http://localhost:8090) or [http://proxy.localhost](http://proxy.localhost)
 
 ## Service Details
 
